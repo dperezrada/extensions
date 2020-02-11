@@ -305,7 +305,7 @@ const run = async (): Promise<number> => {
         documentName: `projects/${config.projectId}/databases/${FIRESTORE_DEFAULT_DATABASE}/documents/${
           snapshot.ref.path
         }`,
-        eventId: " ",
+        eventId: "",
         data: snapshot.data(),
       };
     });
