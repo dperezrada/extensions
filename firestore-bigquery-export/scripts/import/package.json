@@ -12,7 +12,7 @@
     "build": "npm run clean && npm run compile",
     "clean": "rimraf ./lib",
     "compile": "tsc",
-    "import": "node ./lib/scripts/import/src/index.js",
+    "import": "node ./lib/index.js",
     "prepare": "npm run build"
   },
   "files": [
@@ -24,7 +24,8 @@
   "author": "Jan Wyszynski <wyszynski@google.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "@google-cloud/bigquery": "^4.7.0",
+    "@firebaseextensions/firestore-bigquery-change-tracker": "^1.0.1",
+    "@google-cloud/bigquery": "^2.1.0",
     "firebase-admin": "^7.1.1",
     "firebase-functions": "^2.2.1",
     "generate-schema": "^2.6.0",
@@ -33,7 +34,7 @@
   },
   "devDependencies": {
     "rimraf": "^2.6.3",
-    "ts-node": "^7.0.1",
-    "typescript": "^3.4.5"
+    "typescript": "^3.4.5",
+    "ts-node": "^7.0.1"
   }
 }
