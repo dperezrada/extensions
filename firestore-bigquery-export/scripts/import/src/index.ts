@@ -25,7 +25,7 @@ import {
   ChangeType,
   FirestoreBigQueryEventHistoryTracker,
   FirestoreDocumentChangeEvent,
-} from "@firebaseextensions/firestore-bigquery-change-tracker";
+} from './../../../firestore-bigquery-change-tracker/src/index';
 
 // For reading cursor position.
 const exists = util.promisify(fs.exists);
