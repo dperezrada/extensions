@@ -8,7 +8,7 @@
     "outDir": "lib",
     "sourceMap": false,
     "target": "es6",
-    "typeRoots": []
+    "types": ["node",]
   },
   "compileOnSave": true,
   "include": [
